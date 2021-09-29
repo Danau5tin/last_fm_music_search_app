@@ -1,0 +1,19 @@
+{
+  "results": {
+    "opensearch:Query": {
+      "#text": "",
+      "role": "request",
+      "searchTerms": "fefefwegwgwgqg",
+      "startPage": "1"
+    },
+    "opensearch:totalResults": "0",
+    "opensearch:startIndex": "0",
+    "opensearch:itemsPerPage": "50",
+    "albummatches": {
+      "album": []
+    },
+    "@attr": {
+      "for": "fefefwegwgwgqg"
+    }
+  }
+}

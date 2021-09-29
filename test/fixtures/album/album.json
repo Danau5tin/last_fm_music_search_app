@@ -1,0 +1,25 @@
+{
+  "name": "Believe",
+  "artist": "Cher",
+  "url": "https://www.last.fm/music/Cher/Believe",
+  "image": [
+    {
+      "#text": "https://lastfm.freetls.fastly.net/i/u/34s/3b54885952161aaea4ce2965b2db1638.png",
+      "size": "small"
+    },
+    {
+      "#text": "https://lastfm.freetls.fastly.net/i/u/64s/3b54885952161aaea4ce2965b2db1638.png",
+      "size": "medium"
+    },
+    {
+      "#text": "https://lastfm.freetls.fastly.net/i/u/174s/3b54885952161aaea4ce2965b2db1638.png",
+      "size": "large"
+    },
+    {
+      "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/3b54885952161aaea4ce2965b2db1638.png",
+      "size": "extralarge"
+    }
+  ],
+  "streamable": "0",
+  "mbid": "63b3a8ca-26f2-4e2b-b867-647a6ec2bebd"
+}
