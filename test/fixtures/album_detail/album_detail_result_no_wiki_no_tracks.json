@@ -1,0 +1,37 @@
+{
+  "album": {
+    "artist": "Black Veil Brides",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      },
+      {
+        "size": "mega",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      },
+      {
+        "size": "",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/b917f0002d5f61c0394f5fb2b3c70775.jpg"
+      }
+    ],
+    "mbid": "",
+    "listeners": "4130",
+    "tags": "",
+    "playcount": "76137",
+    "name": "Sex and Hollywood",
+    "url": "https://www.last.fm/music/Black+Veil+Brides/Sex+and+Hollywood"
+  }
+}

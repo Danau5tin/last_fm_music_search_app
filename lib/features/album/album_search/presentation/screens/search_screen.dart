@@ -32,6 +32,7 @@ class _SearchScreenState extends State<SearchScreen> {
         ),
         const SizedBox(height: 40),
         TextField(
+          key: const ValueKey("searchBar"),
           controller: _controller,
           onSubmitted: (_) => _submitAlbumSearch(),
           decoration: InputDecoration(
@@ -42,6 +43,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   OutlineInputBorder(borderRadius: BorderRadius.circular(16))),
         ),
         ElevatedButton(
+          key: const ValueKey("searchButton"),
           onPressed: _submitAlbumSearch,
           child: const Text("Search"),
         )

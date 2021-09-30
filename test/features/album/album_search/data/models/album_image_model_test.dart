@@ -46,6 +46,15 @@ void main() {
       expect(albumImageModel.url, jsonMap["#text"]);
       expect(albumImageModel.size, AlbumImageModelSize.extralarge);
     });
+
+    test("should return kDefaultImagePath if url is empty String", () async {
+      // Arrange
+      final smallMap = {"#text": "", "size": "small"};
+      // Act
+      final albumImageModel = AlbumImageModel.fromJson(smallMap);
+      // Assert
+      expect(albumImageModel.url, kDefaultAlbumImagePath);
+    });
   });
 
   group("getSpecificImageUrlFromList", () {
@@ -74,7 +83,7 @@ void main() {
       expect(result, mediumMap["#text"]);
     });
 
-    test("should return small image as it is available and medium is not",
+    test("should return extraLarge image as it is available and medium is not",
         () async {
       // Arrange
       final testList = [smallMap, largeMap, extraLargeMap];
@@ -82,7 +91,7 @@ void main() {
       final result = AlbumImageModel.getSpecificImageUrlFromList(
           testList, AlbumImageModelSize.medium);
       // Assert
-      expect(result, smallMap["#text"]);
+      expect(result, extraLargeMap["#text"]);
     });
 
     test("should return large image as it is available", () async {

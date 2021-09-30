@@ -1,0 +1,84 @@
+{
+  "album": {
+    "listeners": "90186",
+    "playcount": "394134",
+    "wiki": {
+      "published": "04 Apr 2017, 15:57",
+      "content": "\"Location\" is the debut single by American singer Khalid. It was released on August 26, 2016 by Right Hand Music Group and RCA Records as the lead single from his debut studio album American Teen. The track was produced by Syk Sense and Tunji Ige, with additional production from Smash David and Taz Taylor. <a href=\"https://www.last.fm/music/Khalid/Location\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.",
+      "summary": "\"Location\" is the debut single by American singer Khalid. It was released on August 26, 2016 by Right Hand Music Group and RCA Records as the lead single from his debut studio album American Teen. The track was produced by Syk Sense and Tunji Ige, with additional production from Smash David and Taz Taylor. <a href=\"https://www.last.fm/music/Khalid/Location\">Read more on Last.fm</a>."
+    },
+    "tracks": {
+      "track": {
+        "artist": {
+          "url": "https://www.last.fm/music/Khalid",
+          "name": "Khalid",
+          "mbid": "28737730-ec70-4da5-89c5-77ac13c5c34d"
+        },
+        "@attr": {
+          "rank": 1
+        },
+        "duration": 117,
+        "url": "https://www.last.fm/music/Khalid/Location/Location",
+        "name": "Location",
+        "streamable": {
+          "fulltrack": "0",
+          "#text": "0"
+        }
+      }
+    },
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      },
+      {
+        "size": "mega",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      },
+      {
+        "size": "",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/e86ca02ba833d3b04e8759b8fd8a4821.jpg"
+      }
+    ],
+    "tags": {
+      "tag": [
+        {
+          "name": "soul",
+          "url": "https://www.last.fm/tag/soul"
+        },
+        {
+          "name": "alternative",
+          "url": "https://www.last.fm/tag/alternative"
+        },
+        {
+          "name": "rnb",
+          "url": "https://www.last.fm/tag/rnb"
+        },
+        {
+          "name": "khalid",
+          "url": "https://www.last.fm/tag/khalid"
+        },
+        {
+          "name": "hip hop",
+          "url": "https://www.last.fm/tag/hip+hop"
+        }
+      ]
+    },
+    "url": "https://www.last.fm/music/Khalid/Location",
+    "artist": "Khalid",
+    "name": "Location",
+    "mbid": "14c262cf-a9f7-46a6-87ce-f5d7b6db3bd7"
+  }
+}

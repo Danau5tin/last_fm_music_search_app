@@ -27,7 +27,7 @@ void main() {
       // Assert
       expect(jsonMap["name"], albumModel.name);
       expect(jsonMap["artist"], albumModel.artist);
-      expect(jsonMap["image"][1]["#text"], albumModel.imageUrl);
+      expect(jsonMap["image"][2]["#text"], albumModel.imageUrl);
     });
 
     test("should return correct album with small image as medium is missing",
@@ -37,7 +37,7 @@ void main() {
       // Act
       final albumModel = AlbumModel.fromJson(jsonMap);
       // Assert
-      expect(jsonMap["image"][0]["#text"], albumModel.imageUrl);
+      expect(jsonMap["image"][1]["#text"], albumModel.imageUrl);
     });
 
     test(

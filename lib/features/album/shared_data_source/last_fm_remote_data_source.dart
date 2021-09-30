@@ -25,7 +25,7 @@ abstract class LastFmRemoteDataSource {
   Future<HttpResponse<DetailedAlbumModel>> getDetailedAlbum(
     @Query("artist") String artistName,
     @Query("album") String albumName, {
-    @Query("method") String method = "album.info",
+    @Query("method") String method = "album.getInfo",
     @Query("api_key") String apiKey = apiKey,
     @Query("format") String format = "json",
   });

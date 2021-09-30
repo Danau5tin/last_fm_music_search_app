@@ -10,7 +10,7 @@ class AlbumImageModel {
   AlbumImageModel(this.url, this.size);
 
   static String getSpecificImageUrlFromList(List<dynamic> listOfMaps,
-      [AlbumImageModelSize sizeToMatch = AlbumImageModelSize.medium]) {
+      [AlbumImageModelSize sizeToMatch = AlbumImageModelSize.large]) {
     try {
       final List<AlbumImageModel> listOfImages = List<AlbumImageModel>.from(
         listOfMaps.map((imageJson) => AlbumImageModel.fromJson(imageJson)),
@@ -20,7 +20,7 @@ class AlbumImageModel {
       }
       return listOfImages
           .firstWhere((element) => element.size == sizeToMatch,
-              orElse: () => listOfImages.first)
+              orElse: () => listOfImages.last)
           .url;
     } catch (_) {
       return kDefaultAlbumImagePath;
@@ -31,7 +31,11 @@ class AlbumImageModel {
     final size = AlbumImageModelSize.values.firstWhere(
         (element) => describeEnum(element) == json["size"],
         orElse: () => AlbumImageModelSize.small);
-    return AlbumImageModel(json["#text"], size);
+    String imageUrl = json["#text"];
+    if (imageUrl == "") {
+      imageUrl = kDefaultAlbumImagePath;
+    }
+    return AlbumImageModel(imageUrl, size);
   }
 }
 

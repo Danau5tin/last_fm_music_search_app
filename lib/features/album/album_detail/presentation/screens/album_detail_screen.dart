@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:last_fm_music_search_app/features/album/album_detail/presentation/bloc/detailed_album_bloc.dart';
 import 'package:last_fm_music_search_app/core/common_presentation/centered_progress_bar.dart';
 import 'package:last_fm_music_search_app/core/common_presentation/something_went_wrong_centered_display.dart';
+import 'package:last_fm_music_search_app/features/album/album_detail/presentation/widgets/album_detail_body.dart';
 
 class AlbumDetailScreen extends StatelessWidget {
   const AlbumDetailScreen({Key? key}) : super(key: key);
@@ -31,7 +32,7 @@ class AlbumDetailScreen extends StatelessWidget {
 
   Widget _buildBody(DetailedAlbumState state) {
     if (state is DetailedAlbumRetrieved) {
-      //TODO:
+      return AlbumDetailBody(state.detailedAlbum);
     }
     if (state is DetailedAlbumLoading) {
       return const CenteredProgressBar();
