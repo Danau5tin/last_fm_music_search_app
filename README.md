@@ -5,21 +5,22 @@ Testing:
     - 42 Unit tests
     - 3 Widget tests
     - 1 Integration test
+    
 I followed TDD whilst implementing the application, and for Model.fromJson() calls I did my best
 to always use genuine .json responses from the data_source (last_fm_api) and test my logic using
 these .json files. The file structure of the lib/ is as best as possible mirrored in test/
 
 Architecture:
 I followed clean architecture principles, with each feature being split between 3 layers:
-    - domain
+    / domain
         - entities
         - use_cases
         - repositories
-    - data
+    / data
         - models
         - repositories
         - data_sources
-    - presentation
+    / presentation
         - state_management
         - screens
         - widgets
