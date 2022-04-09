@@ -14,17 +14,23 @@ class AlbumSearchBloc extends Bloc<AlbumSearchEvent, AlbumSearchState> {
   AlbumSearchBloc(this._searchForAlbumUseCase) : super(AlbumSearchInitial()) {
     on<AlbumExecuteSearch>((event, emit) async {
       emit(AlbumSearchLoading());
-      final DataState<List<Album>> result = await _searchForAlbumUseCase(
-          SearchForAlbumParams(albumName: event.albumName));
-      result.when(success: (albumList) {
-        if (albumList.isEmpty) {
-          emit(AlbumsNotFound(event.albumName));
-        } else {
-          emit(AlbumsRetrieved(albumList, event.albumName));
-        }
-      }, failure: (message, _) {
-        emit(AlbumsError(message));
-      });
+      final newState = await _onAlbumExecSearch(event);
+      emit(newState);
     });
+  }
+
+  Future<AlbumSearchState> _onAlbumExecSearch(AlbumExecuteSearch event) async {
+    final DataState<List<Album>> result = await _searchForAlbumUseCase(
+      SearchForAlbumParams(albumName: event.albumName),
+    );
+    result.when(
+      success: (albumList) {
+        return albumList.isEmpty
+            ? AlbumsNotFound(event.albumName)
+            : AlbumsRetrieved(albumList, event.albumName);
+      },
+      failure: (message, _) => AlbumsError(message),
+    );
+    throw Exception('Not able to understand result == $result');
   }
 }
